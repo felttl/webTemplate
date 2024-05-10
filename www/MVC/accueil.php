@@ -2,9 +2,12 @@
 // author: felix TTL
 // URL: accueil.php?emplacement=...&action=...
 
+
+
 $emplacement = $_REQUEST["emplacement"] ?? "accueil";
-ExceptionManager::setMode(ExceptionManager::MOD_DEBUG_D); // a changer pour le mode prod
-ErrorHandlerManager
+// a changer pour le mode prod
+ExceptionManager::setMode(ExceptionManager::MOD_DEBUG_D); 
+ErrorHandlerManager::setMode(ErrorHandlerManager::REPORT_ALL);
 
 switch ($emplacement) {
     case 'value':

@@ -16,7 +16,7 @@ interface PrepareTemplate extends RecupInfos{
     // méthode privée pour éviter de répéter du code dans toues les fonctions "exec"
     // private function bindAll(); // sert a préparer toutes les variables
 
-    // méthodes de préparation génériques
+    // fonctions de préparation génériques
     public function execSelect();
     public function execDelete();    
     public function execInsert();
